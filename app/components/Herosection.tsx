@@ -11,7 +11,7 @@ export default function HeroSection() {
       style={{ backgroundColor: 'rgba(169, 169, 169, 0.5)' }}>
         {/* Left Content */}
         <div className="w-1/2 pr-8 flex flex-col justify-center ">
-        <div class="flex justify-between items-center gap-2">
+        <div className="flex justify-between items-center gap-2">
         <h1 
   style={{ 
     textShadow: '0.5px 0.5px 1px rgba(255, 255, 255, 1), -0.5px -0.5px 1px rgba(255, 255, 255, 1), 0.5px -0.5px 1px rgba(255, 255, 255, 1), -0.5px 0.5px 1px rgba(255, 255, 255, 1)' 
