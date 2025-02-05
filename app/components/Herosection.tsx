@@ -107,6 +107,6 @@ const styles = {
     gap: '20px',
   },
   logo: {
-    objectFit: 'contain' as 'contain', // Explicit type casting for 'objectFit'
+    objectFit: 'contain', // Directly using the valid value 'contain'
   },
 };
