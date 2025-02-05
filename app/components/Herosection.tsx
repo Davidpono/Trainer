@@ -28,7 +28,7 @@ export default function HeroSection() {
                   alt="Logo 1" 
                   width={150} 
                   height={75} 
-                  style={styles.logo}
+                  style={{ ...styles.logo, objectFit: 'contain' }}
                 />
               </div>
             </div>
@@ -39,7 +39,7 @@ export default function HeroSection() {
                   alt="Logo 2" 
                   width={150} 
                   height={75} 
-                  style={styles.logo}
+                  style={{ ...styles.logo, objectFit: 'contain' }}
                 />
               </div>
             </div>
@@ -107,6 +107,6 @@ const styles = {
     gap: '20px',
   },
   logo: {
-    objectFit: 'contain', // Directly using the valid value 'contain'
+    // Removing objectFit here, setting it inline for better type handling
   },
 };
