@@ -5,10 +5,10 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <div className="min-h-screen bg-transparent flex items-center">
-      <div 
-        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex rounded-lg"
-        style={{ backgroundColor: 'rgba(169, 169, 169, 0.5)' }}
-      >
+   <div 
+  className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex rounded-lg"
+  style={{ backgroundColor: 'rgba(169, 169, 169, 0.5)' }}
+>
         {/* Left Content */}
         <div className="w-1/2 pr-8 flex flex-col justify-center">
           <div className="flex justify-between items-center gap-2">
