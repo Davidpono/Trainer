@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
           <Link href="/reviews" className="text-white hover:text-blue-300 transition">REVIEWS & TESTIMONIALS</Link>
           <Link href="/One" className="text-white hover:text-blue-300 transition">ONE ON ONE</Link>
           <Link href="/consultation" className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">
-            BOOK CONSULTATION
+             BOOK CONSULTATION
           </Link>
         </div>
       </div>
