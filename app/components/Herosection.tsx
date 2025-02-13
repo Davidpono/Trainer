@@ -19,7 +19,7 @@ export default function HeroSection() {
               }}
               className="text-5xl lg:text-7xl font-bold mb-4 text-black text-center lg:text-left"
             >
-              Daveefit_<br />
+              daveeefit_<br />
             </h1>
             <div className="flex  lg:flex-row justify-between items-center gap-1">
               <div style={styles.logoContainer}>

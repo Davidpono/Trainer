@@ -1,3 +1,5 @@
+// Navbar Component
+
 'use client'; // Add this line to mark the component as a client-side component
 
 import Link from 'next/link'; // Import Link from next/link
@@ -23,7 +25,7 @@ const Navbar: React.FC = () => {
           <Link href="/training" className="text-white hover:text-blue-300 transition">ONLINE PERSONAL TRAINING</Link>
           <Link href="/reviews" className="text-white hover:text-blue-300 transition">REVIEWS & TESTIMONIALS</Link>
           <Link href="/One" className="text-white hover:text-blue-300 transition">ONE ON ONE</Link>
-          <Link href="/consultation" className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">
+          <Link href="/contact" className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">
             BOOK CONSULTATION
           </Link>
         </div>
@@ -54,44 +56,42 @@ const Navbar: React.FC = () => {
 
       {/* Mobile menu links */}
       {isMobileMenuOpen && (
-
-
-<div className="lg:hidden bg-black absolute top-14 left-0 w-full shadow-lg z-60">
-<div className="flex flex-col items-center py-4">
-  {/* Non-consultation links */}
-  <div className="w-full">
-    <Link href="/" className="text-white py-2 hover:bg-white hover:text-black transition w-full text-center">
-      HOME
-    </Link>
-  </div>
-  <div className="w-full">
-    <Link href="/training" className="text-white py-2 hover:bg-white hover:text-black transition w-full text-center">
-      ONLINE PERSONAL TRAINING
-    </Link>
-  </div>
-  <div className="w-full">
-    <Link href="/reviews" className="text-white py-2 hover:bg-white hover:text-black transition w-full text-center">
-      REVIEWS & TESTIMONIALS
-    </Link>
-  </div>
-  <div className="w-full">
-    <Link href="/One" className="text-white py-2 hover:bg-white hover:text-black transition w-full text-center">
-      ONE ON ONE
-    </Link>
-  </div>
-  
-  {/* Book Consultation link */}
-  <div className="w-full bg-red-600">
-    <Link
-      href="/consultation"
-      className="text-white  hover:bg-white hover:text-black transition w-full text-center"
-    >
-      BOOK CONSULTATION
-    </Link>
-  </div>
-</div>
-</div>
-
+        <div className="lg:hidden bg-black absolute top-14 left-0 w-full shadow-lg z-60">
+          <div className="flex flex-col items-center py-4">
+            {/* Non-consultation links */}
+            <div className="w-full">
+              <Link href="/" className="text-white py-2 hover:bg-white hover:text-black transition w-full text-center" onClick={() => setIsMobileMenuOpen(false)}>
+                HOME
+              </Link>
+            </div>
+            <div className="w-full">
+              <Link href="/training" className="text-white py-2 hover:bg-white hover:text-black transition w-full text-center" onClick={() => setIsMobileMenuOpen(false)}>
+                ONLINE PERSONAL TRAINING
+              </Link>
+            </div>
+            <div className="w-full">
+              <Link href="/reviews" className="text-white py-2 hover:bg-white hover:text-black transition w-full text-center" onClick={() => setIsMobileMenuOpen(false)}>
+                REVIEWS & TESTIMONIALS
+              </Link>
+            </div>
+            <div className="w-full">
+              <Link href="/One" className="text-white py-2 hover:bg-white hover:text-black transition w-full text-center" onClick={() => setIsMobileMenuOpen(false)}>
+                ONE ON ONE
+              </Link>
+            </div>
+            
+            {/* Book Consultation link */}
+            <div className="w-full bg-red-600">
+              <Link
+                href="/contact"
+                className="text-white hover:bg-white hover:text-black transition w-full text-center"
+                onClick={() => setIsMobileMenuOpen(false)} // Close mobile menu when clicked
+              >
+                BOOK CONSULTATION
+              </Link>
+            </div>
+          </div>
+        </div>
       )}
     </nav>
   );
