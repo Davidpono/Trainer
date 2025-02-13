@@ -11,24 +11,24 @@ export default function HeroSection() {
       >
         {/* Left Content (Text) */}
         <div className="w-full lg:w-2/3 flex flex-col justify-center">
-          <div className="flex justify-start items-center gap-3">
+          <div className="flex flex-col lg:flex-row justify-start items-center gap-3 mb-4">
             <h1
               style={{
                 textShadow:
                   "0.5px 0.5px 1px rgb(211, 88, 88), -0.5px -0.5px 1px rgba(255, 255, 255, 1), 0.5px -0.5px 1px rgba(255, 255, 255, 1), -0.5px 0.5px 1px rgba(255, 255, 255, 1)",
               }}
-              className="text-5xl lg:text-7xl font-bold mb-4 text-black"
+              className="text-5xl lg:text-7xl font-bold mb-4 text-black text-center lg:text-left"
             >
               Daveefit_<br />
             </h1>
-            <div className="flex justify-between items-center gap-1">
+            <div className="flex flex-col lg:flex-row justify-between items-center gap-1">
               <div style={styles.logoContainer}>
                 <Image
                   src="/Photos/logo1.webp"
                   alt="Logo 1"
                   width={100}
                   height={50}
-                  unoptimized={true} 
+                  unoptimized={true}
                   style={{ objectFit: "contain" }}
                 />
               </div>
@@ -38,7 +38,7 @@ export default function HeroSection() {
                   alt="Logo 2"
                   width={100}
                   height={50}
-                  unoptimized={true} 
+                  unoptimized={true}
                   style={{ objectFit: "contain" }}
                 />
               </div>
