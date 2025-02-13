@@ -6,7 +6,7 @@ export default function HeroSection() {
   return (
     <div className="min-h-screen bg-transparent flex items-center">
    <div 
-  className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex rounded-lg"
+  className="max-w-5xl max-h-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex rounded-lg"
   style={{ backgroundColor: 'rgba(169, 169, 169, 0.5)' }}
 >
         {/* Left Content */}
@@ -75,7 +75,7 @@ export default function HeroSection() {
         {/* Right Image */}
         <div className="w-1/2 relative h-[800px]">
           <Image
-            src="/Photos/3333.jpg"
+            src="/Photos/back.jpg"
             alt="Personal Trainer"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
