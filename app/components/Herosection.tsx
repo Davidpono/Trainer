@@ -24,7 +24,7 @@ export default function HeroSection() {
             <div className="flex justify-between items-center gap-1">
               <div style={styles.logoContainer}>
                 <Image
-                  src="/photos/logo1.webp"
+                  src="/Photos/logo1.webp"
                   alt="Logo 1"
                   width={100}
                   height={50}
@@ -34,7 +34,7 @@ export default function HeroSection() {
               </div>
               <div style={styles.logoContainer}>
                 <Image
-                  src="/photos/logo2.png"
+                  src="/Photos/logo2.png"
                   alt="Logo 2"
                   width={100}
                   height={50}
