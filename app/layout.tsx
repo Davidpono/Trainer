@@ -32,7 +32,7 @@ export default function RootLayout({
           backgroundImage: "url('/Photos/dale.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
+          backgroundRepeat: "repeat",
           height: "100vh",
           width: "100%",
         }}
