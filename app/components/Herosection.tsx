@@ -6,7 +6,7 @@ export default function HeroSection() {
   return (
     <div className="min-h-screen min-w-screen bg-transparent flex items-center justify-center"> {/* Centering parent container */}
       <div
-        className="lg:w-[80%] px-[5%] py-[2%] flex rounded-lg"
+        className="lg:w-[60%] px-[5%] py-[2%] flex rounded-lg"
         style={{ backgroundColor: 'rgba(169, 169, 169, 0.5)' }}
       >
         {/* Left Content */}
