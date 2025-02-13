@@ -21,7 +21,7 @@ export default function HeroSection() {
             >
               Daveefit_<br />
             </h1>
-            <div className="flex flex-col lg:flex-row justify-between items-center gap-1">
+            <div className="flex  lg:flex-row justify-between items-center gap-1">
               <div style={styles.logoContainer}>
                 <Image
                   src="/Photos/logo1.webp"
