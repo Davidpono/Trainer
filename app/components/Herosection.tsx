@@ -1,5 +1,5 @@
 "use client";
-
+import Link from 'next/link';
 import Image from "next/image";
 
 export default function HeroSection() {
@@ -45,20 +45,22 @@ export default function HeroSection() {
             </div>
           </div>
           <div className="mb-8">
-            <h2 className="text-xl lg:text-2xl font-medium text-red-600 mb-2">
+            <h2 className="text-xl lg:text-2xl font-medium text-red-600 mb-2 font-bold">
               — I Take The Guesswork<br />
               Out of Fitness
             </h2>
-            <p className="text-white-600 mb-4">
+            <p className="text-white-600 mb-4 font-bold" >
               With 15+ years in bodybuilding and powerlifting, I’m ACSM and NSCA certified and have been training clients in person and online for 7 years. As a software engineer, I bring a data-driven, analytical approach to creating optimized training plans.
             </p>
-            <p className="text-white-600 mb-4">
+            <p className="text-white-600 mb-4 font-bold">
               AS YOUR ONLINE PERSONAL TRAINER, I’LL HELP YOU CRUSH YOUR FITNESS GOALS WITH PERSONALIZED WORKOUT PLANS, EXPERT GUIDANCE, AND THE MOTIVATION YOU NEED TO SUCCEED.
             </p>
             <div className="flex gap-4">
-              <button className="bg-red-600 text-white px-6 py-3 rounded">
-                Contact Me!
-              </button>
+            <Link href="/contact">
+  <button className="bg-red-600 text-white px-6 py-3 rounded transition transform hover:bg-red-700 hover:scale-105 active:scale-95 active:bg-red-800">
+    Contact Me!
+  </button>
+</Link>
             </div>
           </div>
         </div>
